@@ -401,23 +401,14 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Photo À propos — ovale large */
-.about-photo-card {
-    width: 100%;
-    height: 350px;            /* hauteur ovale */
-    border-radius: 40px;      /* forme ovale */
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-}
 
 /* Image à l'intérieur */
 .imageAboutPage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;        /* remplit l’ovale sans déformation */
-    border-radius: 40px;
+width: 280px;
+height: 280px;
+object-fit:cover;
+border-radius: 50%;
+box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
 }
 
 
@@ -446,3 +437,168 @@
     margin-bottom: 1rem;
 }
 
+/********************************************
+ * RESPONSIVE PREMIUM — MOBILE (< 768px)
+ ********************************************/
+@media (max-width: 768px) {
+
+    /******** NAVBAR ********/
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    /******** HERO ********/
+    .bgimage {
+        height: 85vh;
+    }
+
+    .hero_title {
+        font-size: 2.2rem;
+    }
+
+    .hero_desc {
+        font-size: 1.3rem;
+    }
+
+    .hero_sub {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 1.2rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-content .btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+        width: auto;
+    }
+
+    /******** ABOUT ********/
+
+
+    .imageAboutPage {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+
+    .about-card {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .about-list li {
+        font-size: 1rem;
+    }
+
+    /******** SKILLS ********/
+    .skill-card {
+        padding: 1rem;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    .skill-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .skill-card li {
+        font-size: 1rem;
+    }
+
+    /******** PORTFOLIO — CARROUSEL ********/
+    .project-carousel {
+        padding: 10px 0;
+        border-radius: 15px;
+    }
+
+    .carousel-track {
+        gap: 0; /* évite les débordements */
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+        padding: 0 1rem; /* réduit le padding */
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .project-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .project-content p {
+        font-size: 0.95rem;
+    }
+
+    .project-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    /******** FLÈCHES ********/
+    .carousel-btn {
+        font-size: 2rem; /* plus petit */
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    /******** CONTACT ********/
+    #contact {
+        padding: 2rem 0;
+        border-radius: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .contactColumn i {
+        font-size: 1.6rem;
+    }
+
+    .contactColumn h4 {
+        font-size: 1.1rem;
+    }
+
+    .contactColumn p,
+    #contact a {
+        font-size: 0.95rem;
+    }
+
+    /******** ESPACEMENTS ********/
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
