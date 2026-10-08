@@ -88,7 +88,7 @@ function initProjectCarousel() {
         updateCarousel();
     });
 
-    // Défilement automatique toutes les 5 secondes
+    // Défilement automatique 
     setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateCarousel();
